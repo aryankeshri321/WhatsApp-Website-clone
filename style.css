@@ -830,11 +830,124 @@ footer {
             top: 300px;
             left: 50px;
         }
+
         .footer{
             display: none;
         }
+        .footer2{
+            min-height:800px;
+            width: 100vw;
+            background-color: rgb(17, 27, 33);
+            color: #fcf5eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .upperfooter2 {
+            padding-top: 20px;
+            height: 300px;
+            width: 100%;
+            color: #fcf5eb;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
-        
+        .downloadbtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 20px;
+            width:100%;
+            height: 70px;
+            overflow-y: hidden;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 20px;
+            background-color: #25d366;
+            height: 55px;
+            width: 70%;
+            border-radius: 60px;
+            border: none;
+            font-size: 20px;
+            gap: 10px;
+        }
+
+        .icons2{
+            padding-top: 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            height: 50px;
+        }
+
+        .icons2 img{
+            height: 50px;
+            cursor: pointer;
+            border: 1px solid #fcf5eb;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .lowerfooter2 {
+            padding-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content:start;
+            align-items:start;
+            width: 100%;
+            height: 100%;
+        }
+
+        .divimg{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            width: 100%;
+            height: 45px;
+            padding-left: 20px;
+        }
+
+        .divlist{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            width: 100%;
+            min-height: 400px
+        }
+
+        .divlist1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 350px;
+        }
+        .divlist2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            min-height: 350px;
+        }
+
+        .divselect{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
+            margin: auto;
+        }
 
 }
 
