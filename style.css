@@ -2144,7 +2144,35 @@ footer {
 
     .left{
         width: 50%;
+        left: 25px;
     }
+
+    .left-msg{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .left-msg>h1{
+        width: 50%;
+        font-size: 45px;
+        font-weight: 500;
+        display: flex;
+        padding-bottom: 20px;
+        line-height: 45px;
+        letter-spacing: -2px;
+        overflow-y: hidden;
+        height: 100px;
+    }
+
+    .left-msg>p{
+        width: 60%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
 }
 
 /* Small Desktops and Laptops: 1025px – 1280px */
