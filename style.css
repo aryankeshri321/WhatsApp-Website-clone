@@ -2076,39 +2076,75 @@ footer {
 }
 
 /* Large Tablets (Landscape): 769px – 1024px */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .navbar2 {
         display: none;
     }
-
+    
     .navbar{
-        position: fixed;
-        background-color: #fcf5ebdc;
-        z-index: 100;
-        padding: 15px 10px;
-        display: flex;
         width: 100%;
-        height: auto;
+        height: 100px;
+        gap: 5px;
+        padding: 10px 5px;
         align-items: center;
+    }
+    
+    .navbar>img{
+        width:150px;
+        height: auto;
+    }
+
+    .nav-options {
+        width: 70%;
+        gap: 30px;
+        font-size: 12px;
+        align-items: center;
+        justify-content:space-between;
+    }
+
+    .Features{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #Download{
+        display:none;
+    }
+
+    #WhatsApp1{
+        width: 150px;
+    }
+
+    .nav-options>a{
+        width: 100px;
+        text-align: center;
+    }
+
+    .btn{
+        width: 140px;
+    }
+
+    .btn>p{
+        display: flex;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstsection{
+        width: 100%;
+    }
+
+    .maabeti{
+        width: 100%;
+        display: flex;
         justify-content: space-between;
     }
 
-    .navbar>img {
-        /* width: 100px; */
-        height: 50px;
-        padding-left: 20px;
+    .left{
+        width: 50%;
     }
-    
-    .firstsection {
-        height: 100%;
-        overflow: hidden;
-        padding: 100px 20px 40px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        overflow: hidden;
-    } 
 }
 
 /* Small Desktops and Laptops: 1025px – 1280px */
