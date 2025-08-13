@@ -2630,7 +2630,9 @@ footer {
 
         .Features {
             display: flex;
-            height: 16px;
+            height: 25px;
+            overflow-y: hidden;
+            font-size: 16px;
             gap: 5px;
             align-items: center;
             width: 85px;
@@ -2642,7 +2644,7 @@ footer {
             position: absolute;
             content: "";
             width: 100%;
-            height: 2px;
+            height: auto;
             background-color: #25d366;
             bottom: 0;
             transform: scaleX(0);
@@ -2864,13 +2866,13 @@ footer {
             gap: 20px;
         }
 
-        .left_part {
+        /* .left_part {
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
-        }
+        } */
 
 
         .right_part {
@@ -2900,10 +2902,10 @@ footer {
             font-weight: 400;
         }
 
-        .black {
+        /* .black {
             padding-left: 20px;
             width: 25%;
-        }
+        } */
 
         #beach {
             scale: 1.5;
@@ -2947,6 +2949,8 @@ footer {
      .Features {
          display: flex;
          height: 16px;
+         font-size: 16px;
+         overflow-y: hidden;
          gap: 5px;
          align-items: center;
          width: 85px;
@@ -3180,13 +3184,9 @@ footer {
          gap: 20px;
      }
 
-     .left_part {
+     /* .left_part {
          width: 50%;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: start;
-     }
+     } */
 
 
      .right_part {
@@ -3216,10 +3216,9 @@ footer {
          font-weight: 400;
      }
 
-     .black {
-         padding-left: 20px;
+     /* .black {
          width: 25%;
-     }
+     } */
 
      #beach {
          scale: 1.5;
