@@ -2604,581 +2604,636 @@ footer {
 
 /* Large Desktops and High-Resolution Screens: 1281px – 1440px */
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
-    .navbar2 {
-        display: none;
-    }
+        .navbar2 {
+            display: none;
+        }
 
-    .navbar {
-        width: 100%;
-        height: 100px;
-        gap: 5px;
-        padding: 10px 25px;
-        align-items: center;
-    }
+        .navbar {
+            width: 100%;
+            height: 100px;
+            gap: 5px;
+            padding: 10px 25px;
+            align-items: center;
+        }
 
-    .navbar>img {
-        /* width: ; */
-        height: auto;
-    }
+        .navbar>img {
+            height: auto;
+        }
 
-    .nav-options {
-        width: 70%;
-        gap: 30px;
-        font-size: 12px;
-        align-items: center;
-        justify-content: center;
-    }
+        .nav-options {
+            width: 70%;
+            gap: 30px;
+            font-size: 12px;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .Features {
-        width: 150px;
-        display: flex;
-        justify-content: center;
-    }
+        .Features {
+            display: flex;
+            height: 16px;
+            gap: 5px;
+            align-items: center;
+            width: 85px;
+            cursor: pointer;
+            position: relative;
+        }
 
-    #WhatsApp1 {
-        width: 150px;
-    }
+        .Features::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #25d366;
+            bottom: 0;
+            transform: scaleX(0);
+            transition: .5s ease-in .1s all;
+            transform-origin: left;
+        }
 
-    .nav-options>a {
-        width: 100px;
-        text-align: center;
-    }
+        .Features:hover::after {
+            transform: scaleX(.8);
+        }
 
-    .btn {
+        .angle {
+            transform: rotate(-90deg);
+            height: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            position: relative;
+            overflow: hidden;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a::before {
+            content: ".";
+            position: absolute;
+            bottom: 0%;
+            height: 2px;
+            width: 100%;
+            background-color: #25d366;
+            transform: scaleX(0);
+            transition: .5s ease-in .1s all;
+            transform-origin: left;
+        }
+
+        a:hover::before {
+            transform: scale(.8);
+        }
+
+        #WhatsApp1 {
+            width: 150px;
+        }
+
+        .nav-options>a {
+            font-size: 16px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /* .btn {
         width: 140px;
-    }
+    } */
 
-    .btn>p {
+        /* .btn>p {
         display: flex;
         font-size: 10px;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-    .firstsection {
-        width: 100%;
-    }
+        .firstsection {
+            width: 100%;
+        }
 
-    .maabeti {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+        .maabeti {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-    .left {
-        width: 50%;
-        left: 35px;
-    }
+        .left {
+            width: 50%;
+            left: 150px;
+        }
 
-    .left-msg {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
+        .left-msg {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
 
-    .left-msg>h1 {
-        width: 50%;
-        font-size: 60px;
-        font-weight: 500;
-        display: flex;
-        padding-bottom: 20px;
-        line-height: 45px;
-        letter-spacing: -2px;
-        overflow-y: hidden;
-        height: 100px;
-    }
+        .left-msg>h1 {
+            width: 50%;
+            font-size: 4em;
+            font-weight: 500;
+            display: flex;
+            padding-bottom: 20px;
+            line-height: 65px;
+            letter-spacing: -2px;
+            overflow-y: hidden;
+            height: auto;
+        }
 
-    .left-msg>p {
-        width: 70%;
-        font-size: 20px;
-        font-weight: 500;
-    }
+        .left-msg>p {
+            width: 60%;
+            font-size: 20px;
+            font-weight: 500;
+        }
 
-    .right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .right>img {
-        position: relative;
-        width: 100%;
-        object-fit: cover;
-        object-position: start;
-        left: 50px;
-    }
+        .right>img {
+            position: relative;
+            width: 100%;
+            object-fit: cover;
+            object-position: start;
+            left: 50px;
+        }
 
-    .img {
-        display: none;
-    }
+        .img {
+            display: none;
+        }
 
-    .secoundsection>img {
-        width: 100%;
-        height: 200px;
-        padding: 10px 10px;
-        object-fit: cover;
-        object-position: center;
+        .secoundsection>img {
+            width: 100%;
+            height: 400px;
+            padding: 10px 10px;
+            object-fit: cover;
+            object-position: center;
 
-    }
+        }
 
-    .secoundsection>p {
-        text-align: center;
-        font-size: 2.5em;
-        letter-spacing: -1px;
-        font-weight: 500;
-        width: 90%;
-    }
-
-
-    .fristbday {
-        width: 100%;
-        display: flex;
-        padding-top: 80px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        gap: 20px;
-    }
-
-    .leftpart>h1 {
-        padding-left: 10px;
-        font-size: 2.5em;
-        font-weight: 400;
-        letter-spacing: -2px;
-        line-height: 30px;
-        overflow: hidden;
-        width: 70%;
-    }
-
-    .leftpart {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .leftpart>p {
-        padding-left: 10px;
-        font-size: 20px;
-        font-weight: 400;
-        width: 70%;
-        overflow: hidden;
-    }
-
-    .learn {
-        padding-left: 10px;
-        display: flex;
-        position: relative;
-        width: 110px;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 15px;
-        height: 28px;
-    }
-
-    .learn>p::before {
-        content: "";
-        position: absolute;
-        width: 82px;
-        height: 2.5px;
-        bottom: 0;
-        background-color: #25d366;
-    }
-
-    #birthdayImg {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        object-position: center;
-    }
+        .secoundsection>p {
+            overflow-y: hidden;
+            text-align: center;
+            font-size: 3em;
+            letter-spacing: -1px;
+            font-weight: 500;
+            width: 60%;
+        }
 
 
-    .secoundbday {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        padding: 80px 20px;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(17, 27, 33);
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+        .fristbday {
+            width: 100%;
+            display: flex;
+            padding-top: 80px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            gap: 20px;
+        }
 
-    .left_part {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+        .leftpart>h1 {
+            padding-left: 10px;
+            font-size: 4em;
+            height: auto;
+            font-weight: 400;
+            letter-spacing: -2px;
+            /* line-height: 30px; */
+            overflow: hidden;
+            width: 70%;
+        }
 
-    .right_part {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+        .leftpart {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
 
-    .right_part>h1 {
-        padding-left: 20px;
-        font-size: 2.5em;
-        font-weight: 400;
-        letter-spacing: -2px;
-        line-height: 30px;
-        overflow: hidden;
-        width: 200px;
-        width: 70%;
-    }
+        .leftpart>p {
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            width: 70%;
+            overflow: hidden;
+        }
 
-    .right_part>p {
-        width: 70%;
-        padding-left: 20px;
-        font-size: 20px;
-        font-weight: 400;
-    }
+        .learn {
+            padding-left: 10px;
+            display: flex;
+            position: relative;
+            width: 110px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+            height: 28px;
+        }
 
-    .black {
-        padding-left: 20px;
-        width: 25%;
-    }
+        .learn>p::before {
+            content: "";
+            position: absolute;
+            width: 82px;
+            height: 2.5px;
+            bottom: 0;
+            background-color: #25d366;
+        }
 
-    #beach {
-        scale: 1.5;
-        position: absolute;
-        height: 200px;
-        top: 250px;
-        left: 50px;
-    }
+        #birthdayImg {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            object-position: center;
+        }
 
-    .footer2 {
-        display: none;
-    }
+
+        .secoundbday {
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            padding: 80px 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(17, 27, 33);
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .left_part {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+
+        .right_part {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .right_part>h1 {
+            padding-left: 20px;
+            font-size: 4em;
+            height: auto;
+            font-weight: 400;
+            letter-spacing: -2px;
+            /* line-height: 30px; */
+            overflow: hidden;
+            width: 200px;
+            width: 70%;
+        }
+
+        .right_part>p {
+            width: 70%;
+            padding-left: 20px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .black {
+            padding-left: 20px;
+            width: 25%;
+        }
+
+        #beach {
+            scale: 1.5;
+            position: absolute;
+            height: 200px;
+            top: 250px;
+            left: 50px;
+        }
+
+        .footer2 {
+            display: none;
+        }
 
 }
 
-@media screen and (min-width: 1281px){
-    .navbar2 {
-        display: none;
-    }
+@media screen and (min-width: 1281px) {
+     .navbar2 {
+         display: none;
+     }
 
-    .navbar {
-        width: 100%;
-        height: 100px;
-        gap: 5px;
-        padding: 10px 25px;
-        align-items: center;
-    }
+     .navbar {
+         width: 100%;
+         height: 100px;
+         gap: 5px;
+         padding: 10px 25px;
+         align-items: center;
+     }
 
-    .navbar>img {
-        height: auto;
-    }
+     .navbar>img {
+         height: auto;
+     }
 
-    .nav-options {
-        width: 70%;
-        gap: 30px;
-        font-size: 12px;
-        align-items: center;
-        justify-content: center;
-    }
+     .nav-options {
+         width: 70%;
+         gap: 30px;
+         font-size: 12px;
+         align-items: center;
+         justify-content: center;
+     }
 
-.Features {
-    display: flex;
-    height: 16px;
-    gap: 5px;
-    align-items: center;
-    width: 85px;
-    cursor: pointer;
-    position: relative;
-}
+     .Features {
+         display: flex;
+         height: 16px;
+         gap: 5px;
+         align-items: center;
+         width: 85px;
+         cursor: pointer;
+         position: relative;
+     }
 
-.Features::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #25d366;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: .5s ease-in .1s all;
-    transform-origin: left;
-}
+     .Features::after {
+         position: absolute;
+         content: "";
+         width: 100%;
+         height: 2px;
+         background-color: #25d366;
+         bottom: 0;
+         transform: scaleX(0);
+         transition: .5s ease-in .1s all;
+         transform-origin: left;
+     }
 
-.Features:hover::after {
-    transform: scaleX(.8);
-}
+     .Features:hover::after {
+         transform: scaleX(.8);
+     }
 
-.angle {
-    transform: rotate(-90deg);
-    height: 10px;
-    cursor: pointer;
-}
+     .angle {
+         transform: rotate(-90deg);
+         height: 10px;
+         cursor: pointer;
+     }
 
-a {
-    position: relative;
-    overflow: hidden;
-}
+     a {
+         position: relative;
+         overflow: hidden;
+     }
 
-a {
-    cursor: pointer;
-}
+     a {
+         cursor: pointer;
+     }
 
-a::before {
-    content: ".";
-    position: absolute;
-    bottom: 0%;
-    height: 2px;
-    width: 100%;
-    background-color: #25d366;
-    transform: scaleX(0);
-    transition: .5s ease-in .1s all;
-    transform-origin: left;
-}
+     a::before {
+         content: ".";
+         position: absolute;
+         bottom: 0%;
+         height: 2px;
+         width: 100%;
+         background-color: #25d366;
+         transform: scaleX(0);
+         transition: .5s ease-in .1s all;
+         transform-origin: left;
+     }
 
-a:hover::before {
-    transform: scale(.8);
-}
+     a:hover::before {
+         transform: scale(.8);
+     }
 
-    #WhatsApp1 {
-        width: 150px;
-    }
+     #WhatsApp1 {
+         width: 150px;
+     }
 
-    .nav-options>a {
-        font-size: 16px;
-        width: 100px;
-        text-align: center;
-    }
+     .nav-options>a {
+         font-size: 16px;
+         width: 100px;
+         text-align: center;
+     }
 
-    .btn {
+     /* .btn {
         width: 140px;
-    }
+    } */
 
-    .btn>p {
+     /* .btn>p {
         display: flex;
         font-size: 10px;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-    .firstsection {
-        width: 100%;
-    }
+     .firstsection {
+         width: 100%;
+     }
 
-    .maabeti {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+     .maabeti {
+         width: 100%;
+         display: flex;
+         justify-content: space-evenly;
+     }
 
-    .left {
-        width: 50%;
-        left: 35px;
-    }
+     .left {
+         width: 50%;
+         left: 150px;
+     }
 
-    .left-msg {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
+     .left-msg {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+     }
 
-    .left-msg>h1 {
-        width: 50%;
-        font-size: 60px;
-        font-weight: 500;
-        display: flex;
-        padding-bottom: 20px;
-        line-height: 45px;
-        letter-spacing: -2px;
-        overflow-y: hidden;
-        height: 100px;
-    }
+     .left-msg>h1 {
+         width: 50%;
+         font-size: 4em;
+         font-weight: 500;
+         display: flex;
+         padding-bottom: 20px;
+         line-height: 65px;
+         letter-spacing: -2px;
+         overflow-y: hidden;
+         height: auto;
+     }
 
-    .left-msg>p {
-        width: 70%;
-        font-size: 20px;
-        font-weight: 500;
-    }
+     .left-msg>p {
+         width: 60%;
+         font-size: 20px;
+         font-weight: 500;
+     }
 
-    .right {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+     .right {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
 
-    .right>img {
-        position: relative;
-        width: 100%;
-        object-fit: cover;
-        object-position: start;
-        left: 50px;
-    }
+     .right>img {
+         position: relative;
+         width: 100%;
+         object-fit: cover;
+         object-position: start;
+         left: 50px;
+     }
 
-    .img {
-        display: none;
-    }
+     .img {
+         display: none;
+     }
 
-    .secoundsection>img {
-        width: 100%;
-        height: 200px;
-        padding: 10px 10px;
-        object-fit: cover;
-        object-position: center;
+     .secoundsection>img {
+         width: 100%;
+         height: 400px;
+         padding: 10px 10px;
+         object-fit: cover;
+         object-position: center;
 
-    }
+     }
 
-    .secoundsection>p {
-        overflow-y: hidden;
-        text-align: center;
-        font-size: 3em;
-        letter-spacing: -1px;
-        font-weight: 500;
-        width: 90%;
-    }
-
-
-    .fristbday {
-        width: 100%;
-        display: flex;
-        padding-top: 80px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        gap: 20px;
-    }
-
-    .leftpart>h1 {
-        padding-left: 10px;
-        font-size: 4em;
-        height: auto;
-        font-weight: 400;
-        letter-spacing: -2px;
-        /* line-height: 30px; */
-        overflow: hidden;
-        width: 70%;
-    }
-
-    .leftpart {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
-
-    .leftpart>p {
-        padding-left: 10px;
-        font-size: 20px;
-        font-weight: 400;
-        width: 70%;
-        overflow: hidden;
-    }
-
-    .learn {
-        padding-left: 10px;
-        display: flex;
-        position: relative;
-        width: 110px;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 15px;
-        height: 28px;
-    }
-
-    .learn>p::before {
-        content: "";
-        position: absolute;
-        width: 82px;
-        height: 2.5px;
-        bottom: 0;
-        background-color: #25d366;
-    }
-
-    #birthdayImg {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        object-position: center;
-    }
+     .secoundsection>p {
+         overflow-y: hidden;
+         text-align: center;
+         font-size: 3em;
+         letter-spacing: -1px;
+         font-weight: 500;
+         width: 60%;
+     }
 
 
-    .secoundbday {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        padding: 80px 20px;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(17, 27, 33);
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+     .fristbday {
+         width: 100%;
+         display: flex;
+         padding-top: 80px;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         overflow: hidden;
+         gap: 20px;
+     }
 
-    .left_part {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+     .leftpart>h1 {
+         padding-left: 10px;
+         font-size: 4em;
+         height: auto;
+         font-weight: 400;
+         letter-spacing: -2px;
+         /* line-height: 30px; */
+         overflow: hidden;
+         width: 70%;
+     }
+
+     .leftpart {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: start;
+     }
+
+     .leftpart>p {
+         padding-left: 10px;
+         font-size: 20px;
+         font-weight: 400;
+         width: 70%;
+         overflow: hidden;
+     }
+
+     .learn {
+         padding-left: 10px;
+         display: flex;
+         position: relative;
+         width: 110px;
+         justify-content: space-between;
+         align-items: center;
+         font-size: 15px;
+         height: 28px;
+     }
+
+     .learn>p::before {
+         content: "";
+         position: absolute;
+         width: 82px;
+         height: 2.5px;
+         bottom: 0;
+         background-color: #25d366;
+     }
+
+     #birthdayImg {
+         width: 100%;
+         height: 600px;
+         object-fit: cover;
+         object-position: center;
+     }
 
 
-    .right_part {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+     .secoundbday {
+         width: 100%;
+         display: flex;
+         overflow: hidden;
+         padding: 80px 20px;
+         justify-content: center;
+         align-items: center;
+         background-color: rgb(17, 27, 33);
+         display: flex;
+         flex-direction: row;
+         gap: 20px;
+     }
 
-    .right_part>h1 {
-        padding-left: 20px;
-        font-size: 4em;
-        height: auto;
-        font-weight: 400;
-        letter-spacing: -2px;
-        /* line-height: 30px; */
-        overflow: hidden;
-        width: 200px;
-        width: 70%;
-    }
+     .left_part {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: start;
+     }
 
-    .right_part>p {
-        width: 70%;
-        padding-left: 20px;
-        font-size: 20px;
-        font-weight: 400;
-    }
 
-    .black {
-        padding-left: 20px;
-        width: 25%;
-    }
+     .right_part {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: start;
+     }
 
-    #beach {
-        scale: 1.5;
-        position: absolute;
-        height: 200px;
-        top: 250px;
-        left: 50px;
-    }
+     .right_part>h1 {
+         padding-left: 20px;
+         font-size: 4em;
+         height: auto;
+         font-weight: 400;
+         letter-spacing: -2px;
+         /* line-height: 30px; */
+         overflow: hidden;
+         width: 200px;
+         width: 70%;
+     }
 
-    .footer2 {
-        display: none;
-    }
+     .right_part>p {
+         width: 70%;
+         padding-left: 20px;
+         font-size: 20px;
+         font-weight: 400;
+     }
 
-}
+     .black {
+         padding-left: 20px;
+         width: 25%;
+     }
+
+     #beach {
+         scale: 1.5;
+         position: absolute;
+         height: 200px;
+         top: 250px;
+         left: 50px;
+     }
+
+     .footer2 {
+         display: none;
+     }
+
+ }
 
 /* Extra Small Mobile (Portrait): 320px – 480px 
 Small Mobile (Landscape): 481px – 600px 
