@@ -3180,9 +3180,6 @@ a:hover::before {
 
 }
 
-/* Extra-Large Desktops: 1441px and up */
-@media screen and (min-width:1441px) and (max-width:2560px) {}
-
 /* Extra Small Mobile (Portrait): 320px – 480px 
 Small Mobile (Landscape): 481px – 600px 
 Small Tablets (Portrait): 601px – 768px 
